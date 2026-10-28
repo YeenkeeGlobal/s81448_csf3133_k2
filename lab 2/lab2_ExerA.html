@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faculty Event Page</title>
+</head>
+<body>
+
+    <!-- Header section -->
+    <header>
+        <h1>Programming Workshop 2026</h1>
+        <p>Learn, Create and Improve Your Programming Skills!</p>
+    </header>
+
+    <!-- Navigation section -->
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#schedule">Schedule</a> |
+        <a href="#register">Register</a>
+    </nav>
+
+    <hr>
+
+    <!-- About the Event section -->
+    <section id="about">
+        <h2>About the Event</h2>
+
+        <!-- First activity article -->
+        <article>
+            <h3>Programming Workshop</h3>
+            <p>
+                This workshop introduces students to basic programming
+                skills and problem-solving techniques.
+            </p>
+        </article>
+
+        <!-- Second activity article -->
+        <article>
+            <h3>Guest Speaker: Mr. Ahmad</h3>
+            <p>
+                Mr. Ahmad will share his experience in software
+                development and technology careers.
+            </p>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- Event Schedule section -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+
+        <table border="1">
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+
+            <tr>
+                <td>8:00 AM</td>
+                <td>Registration</td>
+                <td>Hall A</td>
+                <td>Danish</td>
+            </tr>
+
+            <tr>
+                <td>9:00 AM</td>
+                <td>Opening Ceremony</td>
+                <td>Hall A</td>
+                <td>Dr. Afis</td>
+            </tr>
+
+            <tr>
+                <td>10:00 AM</td>
+                <td>Programming Talk</td>
+                <td>Lab 1</td>
+                <td>Mr. Mirul</td>
+            </tr>
+
+            <tr>
+                <td>11:00 AM</td>
+                <td colspan="3">Lunch Break</td>
+            </tr>
+
+            <tr>
+                <td>12:00 PM</td>
+                <td>HTML Workshop</td>
+                <td>Lab 2</td>
+                <td>Mr. Mirul</td>
+            </tr>
+
+            <tr>
+                <td>2:00 PM</td>
+                <td>Group Activity</td>
+                <td>Lab 2</td>
+                <td>Ms. Amirah</td>
+            </tr>
+
+            <tr>
+                <td>4:00 PM</td>
+                <td>Closing Ceremony</td>
+                <td>Hall A</td>
+                <td>Dr. Afis</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Registration Form section -->
+    <section id="register">
+        <h2>Event Registration</h2>
+
+        <form action="register.html" method="post">
+
+            <!-- Full name input -->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br><br>
+
+            <!-- Matric number input -->
+            <label for="matric">Matric Number:</label>
+            <input type="text" id="matric" name="matric" required>
+            <br><br>
+
+            <!-- Email input -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!-- Year of study radio buttons -->
+            <p>Year of Study:</p>
+
+            <input type="radio" id="year1" name="year" value="Year 1">
+            <label for="year1">Year 1</label>
+
+            <input type="radio" id="year2" name="year" value="Year 2">
+            <label for="year2">Year 2</label>
+
+            <input type="radio" id="year3" name="year" value="Year 3">
+            <label for="year3">Year 3</label>
+
+            <input type="radio" id="year4" name="year" value="Year 4">
+            <label for="year4">Year 4</label>
+            <br><br>
+
+            <!-- Session selection checkboxes -->
+            <p>Select Sessions to Join:</p>
+
+            <input type="checkbox" id="session1" name="session[]" value="Programming Talk">
+            <label for="session1">Programming Talk</label>
+            <br>
+
+            <input type="checkbox" id="session2" name="session[]" value="HTML Workshop">
+            <label for="session2">HTML Workshop</label>
+            <br>
+
+            <input type="checkbox" id="session3" name="session[]" value="Group Activity">
+            <label for="session3">Group Activity</label>
+            <br>
+
+            <input type="checkbox" id="session4" name="session[]" value="Career Talk">
+            <label for="session4">Career Talk</label>
+            <br><br>
+
+            <!-- selection dropdown -->
+            <label for="programme">Programme or Faculty:</label>
+
+            <select id="programme" name="programme">
+                <option value="Computer Science">Computer Science</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="Multimedia">Multimedia</option>
+            </select>
+            <br><br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Register">
+
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Footer section -->
+    <footer>
+        <p>Organised by the Faculty of Computing</p>
+        <p>&copy; 2026 Faculty Event. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
