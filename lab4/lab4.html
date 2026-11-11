@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 4</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .welcome-note {
+            background: #eef6f8;
+            padding: 12px;
+            border-left: 4px solid #2f6f8f;
+        }
+    </style>
+</head>
+<body>
+
+<header id="home">
+    <h2>MyWeb</h2>
+    <p>Learning HTML5 & CSS</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#form">Form</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+
+    <section id="about">
+        <p class="eyebrow">LAB EXERCISE 4</p>
+        <h1>Build a Responsive Web Page with HTML5 and CSS</h1>
+        <p>This webpage demonstrates HTML5 structure,
+        navigation, multimedia, CSS and forms.</p>
+        <p class="welcome-note">Welcome to my webpage!</p>
+    </section>
+
+    <section>
+        <h2>Page Structure</h2>
+
+        <div class="cards">
+            <article>
+                <h3>01 - Header</h3>
+                <p>Website name and tagline.</p>
+            </article>
+
+            <article>
+                <h3>02 - Navigation</h3>
+                <p>Links to each section.</p>
+            </article>
+
+            <article>
+                <h3>03 - Main Content</h3>
+                <p>Contains webpage information.</p>
+            </article>
+
+            <article>
+                <h3>04 - Footer</h3>
+                <p>Copyright information.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="media">
+        <h2>Video Section</h2>
+
+        <figure>
+            <video controls width="100%">
+                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                type="video/mp4">
+                Your browser does not support video.
+            </video>
+            <figcaption>Sample HTML5 Video</figcaption>
+        </figure>
+    </section>
+
+    <section id="css">
+        <h2>CSS Styling Demonstration</h2>
+
+        <p class="underline">This text is underlined.</p>
+        <p class="strike">This text has line-through.</p>
+
+        <a href="#form" class="demo-link">
+            Hover over this link
+        </a>
+    </section>
+
+    <section id="form">
+        <h2>Get to Know You</h2>
+        <p>Fill in the form below.</p>
+
+        <form action="#" method="post">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name"
+            name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email"
+            name="email" placeholder="Enter your email" required>
+
+            <fieldset>
+                <legend>Gender:</legend>
+
+                <label>
+                    <input type="radio" name="gender"
+                    value="Male" required> Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender"
+                    value="Female"> Female
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Favourite Hobbies:</legend>
+
+                <label>
+                    <input type="checkbox"
+                    name="hobbies[]" value="Reading"> Reading
+                </label>
+
+                <label>
+                    <input type="checkbox"
+                    name="hobbies[]" value="Sports"> Sports
+                </label>
+
+                <label>
+                    <input type="checkbox"
+                    name="hobbies[]" value="Gaming"> Gaming
+                </label>
+
+                <label>
+                    <input type="checkbox"
+                    name="hobbies[]" value="Music"> Music
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit Form</button>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 MyWeb. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
