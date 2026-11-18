@@ -1,0 +1,96 @@
+/* External CSS for e-Café Campus */
+
+/* Navigation bar styling */
+.navbar { background-color: #154360; }
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.navbar li { display: inline-block; }
+.navbar a {
+    display: block;
+    padding: 14px 22px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar a:link { color: #ffffff; }
+.navbar a:visited { color: #E8DAEF; }
+.navbar a:hover { background-color: #E67E22; color: #ffffff; }
+.navbar a:active { background-color: #C0392B; color: #ffffff; }
+
+/* General page styling */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #FFFDF8;
+}
+header {
+    padding: 28px 15px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #784212;
+}
+h1 { margin: 0; }
+h2 { color: #784212; text-decoration: underline; }
+.page-section { width: 90%; max-width: 900px; margin: 30px auto; }
+.menu-item {
+    background-color: #FDEBD0;
+    border: 1px solid #EDBB99;
+    border-radius: 7px;
+    padding: 15px 20px;
+    margin: 12px 0;
+}
+.old-price { color: #777777; text-decoration: line-through; margin-right: 8px; }
+.highlight { font-weight: bold; color: #C0392B; }
+video { max-width: 100%; height: auto; }
+figure { margin: 15px 0; text-align: center; }
+figcaption, .note { color: #666666; font-size: 0.9rem; margin-top: 8px; }
+.feedback-form {
+    width: 90%;
+    max-width: 550px;
+    margin: 20px auto;
+    padding: 22px;
+    background-color: #FDF2E9;
+    border: 1px solid #D5A67A;
+    border-radius: 8px;
+}
+.feedback-form label { display: inline-block; margin: 7px 10px 7px 0; }
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 14px;
+    border: 1px solid #C9A58A;
+    border-radius: 4px;
+}
+button {
+    display: block;
+    margin-top: 16px;
+    padding: 10px 22px;
+    border: 0;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #784212;
+    cursor: pointer;
+}
+button:hover { background-color: #E67E22; }
+footer {
+    padding: 22px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #154360;
+}
+footer a, footer a:visited { color: #ffffff; }
+
+/* Responsive navigation and page layout */
+@media (max-width: 600px) {
+    .navbar li { display: block; }
+    .navbar a { padding: 12px; }
+    .page-section { width: 92%; }
+}
